@@ -1,0 +1,92 @@
+{
+    "name": "ddb-full-compendiums",
+    "title": "DDB Full Compendiums",
+    "description": "Sharing DDB Compendiums across worlds",
+    "author": "usedtobeme",
+    "version": "0.0.2",
+    "minimumCoreVersion": "0.7.9",
+    "compatibleCoreVersion": "9",
+    "packs": [
+        {
+            "name": "ddb-items",
+            "label": "DDB Items",
+            "path": "packs/ddb-items.db",
+            "entity": "Item",
+            "module": "ddb-full-compendiums",
+            "system": "dnd5e"
+        },
+        {
+            "name":"ddb-spells",
+            "label":"DDB Spells",
+            "entity": "Item",
+            "module": "ddb-full-compendiums",
+            "path": "packs/ddb-spells.db",
+            "system": "dnd5e"
+        },
+        {
+            "name":"ddb-feats",
+            "label":"DDB Feats",
+            "entity": "Item",
+            "module": "ddb-full-compendiums",
+            "path": "packs/ddb-feats.db",
+            "system": "dnd5e"
+        },
+        {
+            "name":"ddb-classes",
+            "label":"DDB Classes",
+            "entity": "Item",
+            "module": "ddb-full-compendiums",
+            "path": "packs/ddb-classes.db",
+            "system": "dnd5e"
+        },
+        {
+            "name":"ddb-class-features",
+            "label":"DDB Class Features",
+            "entity": "Item",
+            "module": "ddb-full-compendiums",
+            "path": "packs/ddb-class-features.db",
+            "system": "dnd5e"
+        },
+        {
+            "name":"ddb-races",
+            "label":"DDB Races",
+            "entity": "Item",
+            "module": "ddb-full-compendiums",
+            "path": "packs/ddb-races.db",
+            "system": "dnd5e"
+        },
+        {
+            "name":"ddb-racial-traits",
+            "label":"DDB Racial Traits",
+            "entity": "Item",
+            "module": "ddb-full-compendiums",
+            "path": "packs/ddb-racial-traits.db",
+            "system": "dnd5e"
+        },
+        {
+            "name": "ddb-monsters",
+            "system":"dnd5e",
+            "path":"packs/ddb-monsters.db",
+            "module":"ddb-full-compendiums",
+            "entity":"Actor",
+            "label":"DDB Monsters"
+        },
+        {
+            "name": "ddb-tables",
+            "system":"dnd5e",
+            "path":"packs/ddb-tables.db",
+            "module":"ddb-full-compendiums",
+            "entity":"RollTable",
+            "label":"DDB Tables"
+        }
+    ],
+    "dependencies": [
+        {
+            "name": "ddb-importer",
+            "manifest": "https://github.com/MrPrimate/ddb-importer/blob/latest/module.json"
+        }
+    ],
+    "esmodules": [
+        "scripts/main.js"
+    ]
+}
